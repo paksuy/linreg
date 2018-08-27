@@ -42,6 +42,7 @@ def table(data):
     return output, sumX, sumY, sumXY, sumX2, sumY2
 
 def correlate(table, sumX, sumY, sumXY, sumX2, sumY2):
+    # held high
     numdata = len(table)
     upper = (numdata * sumXY) - (sumX * sumY)
     lowerleft = (numdata * sumX2) - (sumX * sumX)
